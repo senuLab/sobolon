@@ -1,0 +1,141 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+div,
+span,
+img,
+a,
+table,
+tr,
+th,
+td,
+small,
+button,
+time,
+figure {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  color: #333333;
+}
+
+html {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+li,
+dd {
+  list-style-type: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Hiragino Mincho ProN", "Noto Serif JP", serif;
+  color: #333333;
+  font-size: 1.6rem;
+}
+
+.l-header {
+  width: 100%;
+  height: 6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .l-header {
+    max-width: 128rem;
+  }
+}
+
+.p-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.p-header__logo {
+  width: 12rem;
+  height: 2.2rem;
+}
+
+.p-header__nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.p-inner {
+  width: 100%;
+  height: 100%;
+  padding: 0 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-inner {
+    padding: 0 4rem;
+  }
+}
+
+.u-mra {
+  margin-right: auto;
+}
+
+.u-mtba {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.u-mrla {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.u-ml48 {
+  margin-left: 4.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .u-pc-none {
+    display: none;
+  }
+}

@@ -1,0 +1,5 @@
+.u-pc-none {
+  @include mq("pc") {
+    display: none;
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/drawer.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <title>sobolon</title>
+  </head>
+  <body class="drawer drawer--right">
+    <header class="l-header u-mrla">
+      <div class="p-inner">
+        <div class="p-header">
+          <img
+            src="./img/logo.png"
+            alt="sobolon:ロゴ"
+            class="p-header__logo u-mra u-mtba"
+          />
+          <nav class="p-header__nav u-mtba">
+            <li class="p-header__nav-item">
+              <a class="p-header__nav-link" href="#">Concept</a>
+            </li>
+            <li class="p-header__nav-item u-ml48">
+              <a class="p-header__nav-link" href="#">Feature</a>
+            </li>
+            <li class="p-header__nav-item u-ml48">
+              <a class="p-header__nav-link" href="#">Products</a>
+            </li>
+            <li class="p-header__nav-item u-ml48">
+              <a class="p-header__nav-link" href="#">News</a>
+            </li>
+            <li class="p-header__nav-item u-ml48">
+              <a class="p-header__nav-link" href="#">Contact</a>
+            </li>
+          </nav>
+          <button
+            type="button"
+            class="drawer-toggle drawer-hamburger u-pc-none"
+          >
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+          </button>
+          <nav class="drawer-nav u-pc-none" role="navigation">
+            <ul class="drawer-menu">
+              <!-- <li><a class="drawer-brand" href="#">Brand</a></li> -->
+              <li><a class="drawer-menu-item" href="#">Concept</a></li>
+              <li><a class="drawer-menu-item" href="#">Feature</a></li>
+              <li><a class="drawer-menu-item" href="#">Products</a></li>
+              <li><a class="drawer-menu-item" href="#">News</a></li>
+              <li><a class="drawer-menu-item" href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+  <script src="./js/drawer.js"></script>
+  <script src="./js/custom.js"></script>
+</html>
