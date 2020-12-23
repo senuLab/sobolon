@@ -58,6 +58,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -69,13 +73,30 @@ body {
 }
 
 .l-header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
   width: 100%;
   height: 6rem;
+  background-color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
   .l-header {
     max-width: 128rem;
+    height: 7rem;
+  }
+}
+
+.p-inner {
+  width: 100%;
+  height: 100%;
+  padding: 0 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-inner {
+    padding: 0 4rem;
   }
 }
 
@@ -104,20 +125,69 @@ body {
   }
 }
 
-.p-inner {
+.p-header__nav-link:hover {
+  color: #3ea1d1;
+}
+
+.p-top {
+  position: relative;
+}
+
+.p-top__sp-img {
   width: 100%;
-  height: 100%;
-  padding: 0 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
-  .p-inner {
-    padding: 0 4rem;
+  .p-top__sp-img {
+    display: none;
   }
+}
+
+.p-top__pc-img {
+  width: 100%;
+  max-width: 99rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-top__pc-img {
+    display: block;
+  }
+}
+
+.p-top__head {
+  line-height: 1.69231;
+}
+
+.p-top__body {
+  line-height: 1.6875;
+}
+
+.p-top__message-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 33rem;
+  height: 33rem;
+  background-color: #ffffff;
 }
 
 .u-mra {
   margin-right: auto;
+}
+
+.u-mla {
+  margin-left: auto;
 }
 
 .u-mtba {
@@ -134,8 +204,48 @@ body {
   margin-left: 4.8rem;
 }
 
+.u-mb28 {
+  margin-bottom: 2.8rem;
+}
+
+.u-mb32 {
+  margin-bottom: 3.2rem;
+}
+
+.u-mb40 {
+  margin-bottom: 4rem;
+}
+
+.u-mb160 {
+  margin-bottom: 16rem;
+}
+
+.u-mt__p-top {
+  margin-top: 6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .u-mt__p-top {
+    margin-top: 7rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .u-pc-none {
     display: none;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .u-sp-none {
+    display: none;
+  }
+}
+
+.u-fwb {
+  font-weight: bold;
+}
+
+.u-fz26 {
+  font-size: 2.6rem;
 }

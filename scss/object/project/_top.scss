@@ -1,0 +1,40 @@
+.p-top {
+  position: relative;
+
+  &__sp-img {
+    width: 100%;
+
+    @include mq("pc") {
+      display: none;
+    }
+  }
+
+  &__pc-img {
+    width: 100%;
+    max-width: 99rem;
+
+    @include mq("pc") {
+      display: block;
+    }
+  }
+
+  &__head {
+    line-height: font-height(4.4rem, 2.6rem);
+  }
+
+  &__body {
+    line-height: font-height(2.7rem, 1.6rem);
+  }
+
+  &__message-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 33rem;
+    height: 33rem;
+    background-color: $color-white;
+  }
+}

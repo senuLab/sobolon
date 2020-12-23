@@ -15,4 +15,8 @@
       display: flex;
     }
   }
+
+  &__nav-link:hover {
+    color: $color-main;
+  }
 }

@@ -3,3 +3,9 @@
     display: none;
   }
 }
+
+.u-sp-none {
+  @include mq("sp") {
+    display: none;
+  }
+}
