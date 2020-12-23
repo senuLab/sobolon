@@ -1,0 +1,15 @@
+.c-title {
+  position: relative;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6rem;
+    height: 0.1rem;
+    background-color: $color-main;
+  }
+}

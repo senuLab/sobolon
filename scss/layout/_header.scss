@@ -7,7 +7,7 @@
   background-color: #ffffff;
 
   @include mq("pc") {
-    max-width: 128rem;
+    //max-width: 128rem;
     height: 7rem;
   }
 }

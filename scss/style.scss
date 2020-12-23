@@ -22,6 +22,8 @@
 // component
 // --------------------------------------
 
+@import "./object/component/title";
+
 // --------------------------------------
 // project
 // --------------------------------------
@@ -29,6 +31,7 @@
 @import "./object/project/inner";
 @import "./object/project/header";
 @import "./object/project/top";
+@import "./object/project/concept";
 
 // --------------------------------------
 // utility

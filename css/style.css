@@ -83,9 +83,25 @@ body {
 
 @media screen and (min-width: 768px) {
   .l-header {
-    max-width: 128rem;
     height: 7rem;
   }
+}
+
+.c-title {
+  position: relative;
+  text-align: center;
+}
+
+.c-title::after {
+  content: "";
+  position: absolute;
+  top: 5.6rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 6rem;
+  height: 0.1rem;
+  background-color: #3ea1d1;
 }
 
 .p-inner {
@@ -131,6 +147,7 @@ body {
 
 .p-top {
   position: relative;
+  max-width: 120rem;
 }
 
 .p-top__sp-img {
@@ -182,6 +199,45 @@ body {
   background-color: #ffffff;
 }
 
+.p-concept {
+  max-width: 120rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-concept__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.p-concept__img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .p-concept__img {
+    width: 50%;
+    max-width: 60rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-concept__message-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .u-mra {
   margin-right: auto;
 }
@@ -204,6 +260,12 @@ body {
   margin-left: 4.8rem;
 }
 
+@media screen and (min-width: 768px) {
+  .u-ml80__pc-message {
+    margin-left: 8rem;
+  }
+}
+
 .u-mb28 {
   margin-bottom: 2.8rem;
 }
@@ -214,6 +276,14 @@ body {
 
 .u-mb40 {
   margin-bottom: 4rem;
+}
+
+.u-mb48 {
+  margin-bottom: 4rem;
+}
+
+.u-mb80 {
+  margin-bottom: 8rem;
 }
 
 .u-mb160 {
@@ -227,6 +297,32 @@ body {
 @media screen and (min-width: 768px) {
   .u-mt__p-top {
     margin-top: 7rem;
+  }
+}
+
+.u-mb__project {
+  margin-bottom: 9.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .u-mb__project {
+    margin-bottom: 16rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .u-mb__p-concept__img {
+    margin-bottom: 4rem;
+  }
+}
+
+.u-mb__p-concept__head {
+  margin-bottom: 2.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .u-mb__p-concept__head {
+    margin-bottom: 4.8rem;
   }
 }
 
@@ -246,6 +342,14 @@ body {
   font-weight: bold;
 }
 
+.u-fz20 {
+  font-size: 2rem;
+}
+
 .u-fz26 {
   font-size: 2.6rem;
+}
+
+.u-fz40 {
+  font-size: 4rem;
 }

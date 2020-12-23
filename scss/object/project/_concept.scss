@@ -1,0 +1,27 @@
+.p-concept {
+  max-width: 120rem;
+
+  &__content {
+    @include mq("pc") {
+      display: flex;
+    }
+  }
+
+  &__img {
+    width: 100%;
+
+    @include mq("pc") {
+      width: 50%;
+      max-width: 60rem;
+    }
+  }
+
+  &__message-wrap {
+    @include mq("pc") {
+      display: flex;
+      width: 50%;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
