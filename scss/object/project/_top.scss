@@ -1,9 +1,15 @@
 .p-top {
   position: relative;
-  max-width: 120rem;
+  max-width: 128rem;
+  margin: 6rem auto 9.6rem;
+
+  @include mq("pc") {
+    margin: 7rem auto 16rem;
+  }
 
   &__sp-img {
     width: 100%;
+    margin-bottom: 4rem;
 
     @include mq("pc") {
       display: none;
@@ -13,6 +19,7 @@
   &__pc-img {
     width: 100%;
     max-width: 99rem;
+    margin-left: auto;
 
     @include mq("pc") {
       display: block;
@@ -21,6 +28,13 @@
 
   &__head {
     line-height: font-height(4.4rem, 2.6rem);
+    font-weight: bold;
+    font-size: 2.6rem;
+    margin-bottom: 3.2rem;
+
+    @include mq("pc") {
+      margin-bottom: 2.8rem;
+    }
   }
 
   &__body {

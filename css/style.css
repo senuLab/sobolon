@@ -127,10 +127,12 @@ body {
 .p-header__logo {
   width: 12rem;
   height: 2.2rem;
+  margin: auto auto auto 0;
 }
 
 .p-header__nav {
   display: none;
+  margin: auto 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -141,17 +143,29 @@ body {
   }
 }
 
+.p-header__nav-item {
+  margin-left: 4.8rem;
+}
+
 .p-header__nav-link:hover {
   color: #3ea1d1;
 }
 
 .p-top {
   position: relative;
-  max-width: 120rem;
+  max-width: 128rem;
+  margin: 6rem auto 9.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-top {
+    margin: 7rem auto 16rem;
+  }
 }
 
 .p-top__sp-img {
   width: 100%;
+  margin-bottom: 4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -163,6 +177,7 @@ body {
 .p-top__pc-img {
   width: 100%;
   max-width: 99rem;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -173,6 +188,15 @@ body {
 
 .p-top__head {
   line-height: 1.69231;
+  font-weight: bold;
+  font-size: 2.6rem;
+  margin-bottom: 3.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-top__head {
+    margin-bottom: 2.8rem;
+  }
 }
 
 .p-top__body {
@@ -200,7 +224,19 @@ body {
 }
 
 .p-concept {
-  max-width: 120rem;
+  max-width: 128rem;
+  margin: 0 auto 9.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-concept {
+    margin: 0 auto 16rem;
+  }
+}
+
+.p-concept__title {
+  font-size: 4rem;
+  margin-bottom: 8rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -213,12 +249,14 @@ body {
 
 .p-concept__img {
   width: 100%;
+  margin-bottom: 4rem;
 }
 
 @media screen and (min-width: 768px) {
   .p-concept__img {
     width: 50%;
     max-width: 60rem;
+    margin-bottom: 0;
   }
 }
 
@@ -227,7 +265,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 50%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -235,7 +272,26 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: calc(50% - 8rem);
+    margin-left: 8rem;
   }
+}
+
+.p-concept__head {
+  margin-bottom: 2.3rem;
+  font-size: 2rem;
+  line-height: 1.7;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .p-concept__head {
+    margin-bottom: 4.8rem;
+  }
+}
+
+.p-concept__body {
+  line-height: 1.6875;
 }
 
 .u-mra {
