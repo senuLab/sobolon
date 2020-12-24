@@ -17,6 +17,7 @@
   }
 
   &__pc-img {
+    display: none;
     width: 100%;
     max-width: 99rem;
     margin-left: auto;
@@ -42,14 +43,16 @@
   }
 
   &__message-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 33rem;
-    height: 33rem;
-    background-color: $color-white;
+    @include mq("pc") {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 33rem;
+      height: 33rem;
+      background-color: $color-white;
+    }
   }
 }

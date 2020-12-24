@@ -1,6 +1,11 @@
 .c-title {
   position: relative;
   text-align: center;
+  font-size: 3rem;
+
+  @include mq("pc") {
+    font-size: 4rem;
+  }
 
   &::after {
     content: "";
