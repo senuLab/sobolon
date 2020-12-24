@@ -20,18 +20,16 @@
   &__card {
     //width: 100%;
     margin: 0 auto 4.8rem;
-    flex: 0 0 28.3%;
-
-    &:first-child {
-      margin-right: auto;
-    }
-
-    &:last-child {
-      margin-left: auto;
-    }
+    //flex: 0 0 28.3%;
 
     @include mq("pc") {
-      margin: 0;
+      margin-left: 9rem;
+    }
+
+    &:nth-child(3n + 1) {
+      @include mq("pc") {
+        margin-left: 0;
+      }
     }
   }
 
