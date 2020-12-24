@@ -1,0 +1,64 @@
+.p-product {
+  max-width: 128rem;
+  margin: 0 auto 9.6rem;
+
+  @include mq("pc") {
+    margin: 0 auto 16rem;
+  }
+
+  &__title {
+    margin-bottom: 6.4rem;
+
+    @include mq("pc") {
+      margin-bottom: 8rem;
+    }
+  }
+
+  &__content {
+    @include mq("pc") {
+      display: flex;
+      justify-content: space-between;
+      max-width: 94rem;
+      margin: 0 auto 4.8rem;
+    }
+  }
+
+  &__item {
+    margin: 0 auto 4.8rem;
+    width: 26rem;
+
+    @include mq("pc") {
+      margin: 0 0 0 8rem;
+    }
+
+    &:nth-child(3n + 1) {
+      @include mq("pc") {
+        margin: 0;
+      }
+    }
+  }
+
+  &__img {
+    margin-bottom: 2.4rem;
+    width: 100%;
+    max-width: 26rem;
+    //height: 26rem;
+  }
+
+  &__body {
+    margin-bottom: 1.6rem;
+    font-size: 1.4rem;
+    line-height: font-height(2.4rem, 1.4rem);
+  }
+
+  &__price {
+    color: $color-gray;
+    font-size: 1.4rem;
+    line-height: font-height(2.4rem, 1.4rem);
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+  }
+}
