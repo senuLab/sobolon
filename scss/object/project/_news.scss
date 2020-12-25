@@ -31,8 +31,14 @@
   }
 
   &__item {
+    transition: all 0.3s;
+
     @include mq("pc") {
       display: flex;
+    }
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
 
@@ -79,5 +85,10 @@
 
   &__button {
     margin: 0 auto;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-main;
+    }
   }
 }

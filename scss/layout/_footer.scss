@@ -1,0 +1,10 @@
+.l-footer {
+  width: 100%;
+  height: 23rem;
+  background-color: #f7f7f7;
+
+  @include mq("pc") {
+    //max-width: 128rem;
+    height: 22rem;
+  }
+}

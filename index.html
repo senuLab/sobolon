@@ -10,6 +10,10 @@
     />
     <link rel="stylesheet" href="./css/drawer.css" />
     <link rel="stylesheet" href="./css/animate.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
     <script src="./js/wow.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./img/favicon.ico" />
@@ -324,7 +328,11 @@
     <!-- news end -->
 
     <!-- concept2 start -->
-    <section class="p-concept2">
+    <section
+      class="p-concept2 wow fadeInUp"
+      data-wow-duration="1s"
+      data-wow-offset="5"
+    >
       <div class="p-inner">
         <div class="p-concept2__content">
           <img
@@ -344,6 +352,89 @@
       </div>
     </section>
     <!-- concept2 end -->
+
+    <!-- contact start -->
+    <section
+      class="p-contact wow fadeInUp"
+      data-wow-duration="1s"
+      data-wow-offset="5"
+    >
+      <div class="p-inner">
+        <h2 class="p-contact__title c-title">Contact</h2>
+        <p class="p-contact__caution">
+          <span class="p-contact__star">＊</span>は入力必須項目です
+        </p>
+
+        <form action="" class="p-contact__form">
+          <div class="p-contact__content">
+            <label class="p-contact__label"
+              >お名前<span class="p-contact__star">*</span></label
+            >
+            <input class="p-contact__email p-contact__item" type="email" />
+          </div>
+          <div class="p-contact__content">
+            <label class="p-contact__label"
+              >メールアドレス<span class="p-contact__star">*</span></label
+            >
+            <input class="p-contact__email p-contact__item" type="email" />
+          </div>
+          <div class="p-contact__content">
+            <label class="p-contact__label"
+              >法人/個人の選択<span class="p-contact__star">*</span></label
+            >
+            <div class="p-contact__radio-wrap">
+              <label class="p-contact__label-radio">
+                <input class="p-contact__radio" type="radio" checked />
+                <span class="p-contact__option">法人</span>
+              </label>
+              <label class="p-contact__label-radio">
+                <input class="p-contact__radio" type="radio" />
+                <span class="p-contact__option">個人</span>
+              </label>
+            </div>
+          </div>
+          <div class="p-contact__content">
+            <label class="p-contact__label"
+              >お問い合わせ内容<span class="p-contact__star">*</span></label
+            >
+            <textarea
+              class="p-contact__detail p-contact__item"
+              type="textarea"
+            ></textarea>
+          </div>
+          <label for="check" class="p-contact__label-checkbox">
+            <input type="checkbox" class="p-contact__checkbox" name="check" /><a
+              class="p-contact__privacy"
+              >プライバシーポリシー</a
+            >に同意します。</label
+          >
+          <button class="p-contact__button c-button">送信</button>
+        </form>
+      </div>
+    </section>
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <footer class="l-footer">
+      <div class="p-footer">
+        <img src="./img/logo.png" alt="sobolon:ロゴ" class="p-footer__logo" />
+        <div class="p-footer__link-wrap">
+          <div class="p-footer__privacy">
+            <a href="" class="p-footer__link">プライバシーポリシー</a>
+          </div>
+          <div class="p-footer__trade">
+            <a href="" class="p-footer__link">特定商取引法に基づく表記</a>
+          </div>
+        </div>
+        <div class="p-footer__sns">
+          <i class="p-footer__icon fab fa-twitter"></i>
+          <i class="p-footer__icon fab fa-instagram"></i>
+          <i class="p-footer__icon fab fa-line"></i>
+        </div>
+        <p class="p-footer__copyright">© 2020 sobolon All rights reserved</p>
+      </div>
+    </footer>
+    <!-- footer end -->
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
