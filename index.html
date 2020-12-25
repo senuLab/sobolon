@@ -370,13 +370,21 @@
             <label class="p-contact__label"
               >お名前<span class="p-contact__star">*</span></label
             >
-            <input class="p-contact__email p-contact__item" type="email" />
+            <input
+              class="p-contact__email p-contact__item"
+              type="text"
+              required
+            />
           </div>
           <div class="p-contact__content">
             <label class="p-contact__label"
               >メールアドレス<span class="p-contact__star">*</span></label
             >
-            <input class="p-contact__email p-contact__item" type="email" />
+            <input
+              class="p-contact__email p-contact__item"
+              type="email"
+              required
+            />
           </div>
           <div class="p-contact__content">
             <label class="p-contact__label"
@@ -384,11 +392,22 @@
             >
             <div class="p-contact__radio-wrap">
               <label class="p-contact__label-radio">
-                <input class="p-contact__radio" type="radio" checked />
+                <input
+                  class="p-contact__radio"
+                  type="radio"
+                  name="belongs"
+                  checked
+                  required
+                />
                 <span class="p-contact__option">法人</span>
               </label>
               <label class="p-contact__label-radio">
-                <input class="p-contact__radio" type="radio" />
+                <input
+                  class="p-contact__radio"
+                  type="radio"
+                  name="belongs"
+                  required
+                />
                 <span class="p-contact__option">個人</span>
               </label>
             </div>
@@ -400,12 +419,16 @@
             <textarea
               class="p-contact__detail p-contact__item"
               type="textarea"
+              required
             ></textarea>
           </div>
           <label for="check" class="p-contact__label-checkbox">
-            <input type="checkbox" class="p-contact__checkbox" name="check" /><a
-              class="p-contact__privacy"
-              >プライバシーポリシー</a
+            <input
+              type="checkbox"
+              class="p-contact__checkbox"
+              name="check"
+              required
+            /><a class="p-contact__privacy">プライバシーポリシー</a
             >に同意します。</label
           >
           <button class="p-contact__button c-button">送信</button>
@@ -415,7 +438,11 @@
     <!-- contact end -->
 
     <!-- footer start -->
-    <footer class="l-footer">
+    <footer
+      class="l-footer wow fadeInUp"
+      data-wow-duration="1s"
+      data-wow-offset="5"
+    >
       <div class="p-footer">
         <img src="./img/logo.png" alt="sobolon:ロゴ" class="p-footer__logo" />
         <div class="p-footer__link-wrap">
