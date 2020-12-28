@@ -422,15 +422,30 @@
               required
             ></textarea>
           </div>
-          <label for="check" class="p-contact__label-checkbox">
+
+          <!--  <label for="check" class="p-contact__label-checkbox">
             <input
               type="checkbox"
               class="p-contact__checkbox"
+              id="check"
               name="check"
               required
             /><a class="p-contact__privacy">プライバシーポリシー</a
             >に同意します。</label
+          > -->
+
+          <input
+            type="checkbox"
+            class="p-contact__checkbox"
+            id="check"
+            name="check"
+            required
+          />
+          <label for="check" class="p-contact__label-checkbox">
+            <a class="p-contact__privacy">プライバシーポリシー</a
+            >に同意します。</label
           >
+
           <button class="p-contact__button c-button">送信</button>
         </form>
       </div>

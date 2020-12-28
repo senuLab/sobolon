@@ -155,12 +155,48 @@
 
   &__label-checkbox {
     display: block;
+    position: relative;
     margin-bottom: 2.9rem;
     text-align: center;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #6cc0e5;
+      position: absolute;
+      left: 0px;
+      top: 0;
+      opacity: 0.6;
+      -webkit-transition: all 0.12s, border-color 0.08s;
+      transition: all 0.12s, border-color 0.08s;
+
+      @include mq("pc") {
+        left: 90px;
+      }
+    }
   }
 
   &__checkbox {
-    display: inline;
+    display: none;
+
+    &:checked + .p-contact__label-checkbox::before {
+      width: 10px;
+      top: -5px;
+      left: 0px;
+      border-radius: 0;
+      opacity: 1;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+
+      @include mq("pc") {
+        left: 90px;
+      }
+    }
   }
 
   &__privacy {
