@@ -206,5 +206,24 @@
 
   &__button {
     margin: 0 auto;
+
+    &--is-active {
+      color: #fff;
+      background-color: $color-main;
+    }
+  }
+
+  &__message {
+    display: none;
+    text-align: center;
+    margin-top: 0.6rem;
+
+    &--error {
+      color: red;
+    }
+  }
+
+  &__dummy {
+    display: none;
   }
 }

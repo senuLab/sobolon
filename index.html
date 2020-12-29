@@ -370,24 +370,31 @@
           <span class="p-contact__star">＊</span>は入力必須項目です
         </p>
 
-        <form action="" class="p-contact__form">
+        <form
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScx99o9ONJmh0tbI0sIgrhOBRmCL10HNgxCZ05FCwXZJTyi3w/formResponse"
+          class="p-contact__form js-form"
+          method="post"
+          target="dummyIframe"
+        >
           <div class="p-contact__content">
             <label class="p-contact__label"
               >お名前<span class="p-contact__star">*</span></label
             >
             <input
-              class="p-contact__email p-contact__item"
+              class="p-contact__name p-contact__item p-contact__input"
               type="text"
+              name="entry.1419128666"
               required
             />
           </div>
-          <div class="p-contact__content">
+          <div class="p-contact__content p-contact__input">
             <label class="p-contact__label"
               >メールアドレス<span class="p-contact__star">*</span></label
             >
             <input
-              class="p-contact__email p-contact__item"
+              class="p-contact__email p-contact__item p-contact__input"
               type="email"
+              name="emailAddress"
               required
             />
           </div>
@@ -398,9 +405,10 @@
             <div class="p-contact__radio-wrap">
               <label class="p-contact__label-radio">
                 <input
-                  class="p-contact__radio"
+                  class="p-contact__radio p-contact__input"
                   type="radio"
-                  name="belongs"
+                  name="entry.326260292"
+                  value="法人"
                   checked
                   required
                 />
@@ -408,9 +416,10 @@
               </label>
               <label class="p-contact__label-radio">
                 <input
-                  class="p-contact__radio"
+                  class="p-contact__radio p-contact__input"
                   type="radio"
-                  name="belongs"
+                  name="entry.326260292"
+                  value="個人"
                   required
                 />
                 <span class="p-contact__option">個人</span>
@@ -422,28 +431,19 @@
               >お問い合わせ内容<span class="p-contact__star">*</span></label
             >
             <textarea
-              class="p-contact__detail p-contact__item"
+              class="p-contact__detail p-contact__item p-contact__input"
               type="textarea"
+              name="entry.1640504982"
               required
             ></textarea>
           </div>
 
-          <!--  <label for="check" class="p-contact__label-checkbox">
-            <input
-              type="checkbox"
-              class="p-contact__checkbox"
-              id="check"
-              name="check"
-              required
-            /><a class="p-contact__privacy">プライバシーポリシー</a
-            >に同意します。</label
-          > -->
-
           <input
             type="checkbox"
-            class="p-contact__checkbox"
+            class="p-contact__checkbox p-contact__input"
             id="check"
-            name="check"
+            name="entry.878675120"
+            value="プライバシーポリシーに同意します。"
             required
           />
           <label for="check" class="p-contact__label-checkbox">
@@ -451,8 +451,22 @@
             >に同意します。</label
           >
 
-          <button class="p-contact__button c-button">送信</button>
+          <button class="p-contact__button c-button js-button" disabled>
+            送信
+          </button>
         </form>
+
+        <iframe class="p-contact__dummy" name="dummyIframe"></iframe>
+        <div class="p-contact__message js-success">
+          <p class="p-contact__message--success">
+            送信完了しました。ありがとうございました。
+          </p>
+        </div>
+        <div class="p-contact__message js-error">
+          <p class="p-contact__message--error">
+            送信に失敗しました。ページを更新して再度送信してください。
+          </p>
+        </div>
       </div>
     </section>
     <!-- contact end -->

@@ -994,6 +994,25 @@ body {
   margin: 0 auto;
 }
 
+.p-contact__button--is-active {
+  color: #fff;
+  background-color: #3ea1d1;
+}
+
+.p-contact__message {
+  display: none;
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+.p-contact__message--error {
+  color: red;
+}
+
+.p-contact__dummy {
+  display: none;
+}
+
 .p-footer {
   text-align: center;
 }
