@@ -2,7 +2,8 @@
   width: 100%;
   margin: 0 auto;
   padding-bottom: 4rem;
-  background: transparent url(./img/contact.png) no-repeat center center/cover;
+  background: transparent url(./../img/contact.png) no-repeat center
+    center/cover;
 
   @include mq("pc") {
     margin: 0 auto;

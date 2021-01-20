@@ -16,7 +16,7 @@
 
   &__nav {
     display: none;
-    //margin: auto 0;
+    margin: auto 0;
 
     @include mq("pc") {
       display: flex;
