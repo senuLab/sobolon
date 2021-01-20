@@ -2,8 +2,7 @@
   width: 100%;
   margin: 0 auto;
   padding-bottom: 4rem;
-  background: transparent url(./../../../img/contact.png) no-repeat center
-    center/cover;
+  background: transparent url(./img/contact.png) no-repeat center center/cover;
 
   @include mq("pc") {
     margin: 0 auto;
@@ -45,15 +44,9 @@
     &:--bg-transparent {
       box-shadow: none;
     }
-
-    /* &:last-child {
-      margin-bottom: 2.4rem;
-    } */
   }
 
   &__content {
-    //display: inline-flex;
-    //flex-direction: column;
     margin-bottom: 3.2rem;
 
     @include mq("pc") {
@@ -72,7 +65,6 @@
 
   &__star {
     font-size: 1.6rem;
-    //line-height: font-height(2.7rem, 1.6rem);
     color: #e7728e;
   }
 
@@ -82,7 +74,6 @@
     margin-bottom: 0.3rem;
     padding: 0.9rem 1.5rem;
     font-size: 1.4rem;
-    //line-height: font-height(3.1rem, 1.4rem);
     color: $color-white;
     background-color: #3ea1d1b3;
 
@@ -110,7 +101,6 @@
     display: flex;
     width: 16rem;
     height: 4rem;
-    //margin-bottom: 3.3rem;
     border: 0.1rem solid $color-white;
     border-radius: 0.1rem;
     box-shadow: 0.5rem 0.5rem 1.5rem #60606029;

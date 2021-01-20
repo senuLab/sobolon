@@ -15,27 +15,36 @@
   }
 
   &__content {
+    display: flex;
+    flex-direction: column;
+
     @include mq("pc") {
-      display: flex;
-      justify-content: space-between;
+      flex-direction: row;
+      width: 100%;
       max-width: 94rem;
       margin: 0 auto 4.8rem;
+      //padding: 0 13rem;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+
+    &:not(:nth-child(3n + 1)) {
+      @include mq("pc") {
+        margin: 0 0 0 8rem;
+      }
     }
   }
 
   &__item {
     margin: 0 auto 4.8rem;
-    width: 26rem;
+    width: 100%;
+    max-width: 26rem;
     transition: all 0.3s;
 
     @include mq("pc") {
-      margin: 0 0 0 8rem;
-    }
-
-    &:nth-child(3n + 1) {
-      @include mq("pc") {
-        margin: 0;
-      }
+      margin: 0;
     }
 
     &:hover {
@@ -47,7 +56,6 @@
     margin-bottom: 2.4rem;
     width: 100%;
     max-width: 26rem;
-    //height: 26rem;
   }
 
   &__body {
